@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richfield Connect | Profile</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="profile.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- External JS -->
+    <script src="profile.js" defer></script>
+</head>
+
+<!-- Background image applied via CSS using this class -->
+<body class="profile-page">
+
+    <!-- HEADER -->
+    <header>
+        <h1>Richfield Connect</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            <a href="signup.html">Sign Up</a>
+			<a href="feed.html">Feed</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- PROFILE CARD -->
+        <section class="form-box">
+            <h2>My Profile</h2>
+
+            <h3 id="name">Loading...</h3>
+
+            <p><strong>Student Number:</strong> <span id="student"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Campus:</strong> <span id="campus"></span></p>
+
+            <h4>Bio</h4>
+            <p id="bioDisplay"></p>
+
+            <h4>Interests</h4>
+            <div id="interestsDisplay"></div>
+
+            <button id="toggleBio">Toggle Bio</button>
+        </section>
+
+        <!-- EXTRA INFO PANEL -->
+        <section class="preview-box">
+            <h2>Profile Insights</h2>
+
+            <p>This profile is dynamically generated using localStorage data.</p>
+
+            <div>
+                <p>✔ No hardcoded data</p>
+                <p>✔ Fully dynamic rendering</p>
+                <p>✔ jQuery-ready UI interactions</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richfield Connect | Sign Up</title>
+
+    <!-- External CSS ONLY -->
+    <link rel="stylesheet" href="signup.css">
+
+    <!-- jQuery CDN (REQUIRED) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- External JS ONLY -->
+    <script src="signup.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Richfield Connect</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="profile.html">Profile</a>
+            <a href="feed.html">Feed</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="container">
+
+        <!-- SIGN UP FORM -->
+        <section class="form-box">
+            <h2>Create Your Account</h2>
+
+            <form id="signupForm">
+
+                <label>Full Name</label>
+                <input type="text" id="fullName">
+                <small class="error" id="nameError"></small>
+
+                <label>Student Number</label>
+                <input type="text" id="studentNumber">
+                <small class="error" id="studentError"></small>
+
+                <label>Campus / DL</label>
+                <select id="campus">
+                    <option value="Richfield Campus">Richfield Campus</option>
+                    <option value="DL">DL</option>
+                </select>
+
+                <label>Email Address</label>
+                <input type="text" id="email">
+                <small class="error" id="emailError"></small>
+
+                <label>Password</label>
+                <input type="password" id="password">
+                <small class="error" id="passwordError"></small>
+
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword">
+                <small class="error" id="confirmError"></small>
+
+                <label>Interests (comma separated)</label>
+                <input type="text" id="interests">
+
+                <label>Short Bio</label>
+                <textarea id="bio" rows="4"></textarea>
+
+                <button type="submit">Sign Up</button>
+
+            </form>
+        </section>
+
+        <!-- LIVE PREVIEW -->
+        <section class="preview-box">
+            <h2>Live Profile Preview</h2>
+
+            <h3 id="previewName">Your Name</h3>
+            <p id="previewBio">Your bio will appear here...</p>
+
+            <h4>Interests</h4>
+            <div id="previewInterests"></div>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("image1.jpg");
+    color: #222;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #1e4fa1;
+    color: white;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* =========================
+   CREATE POST BOX
+========================= */
+
+.form-box {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+    color: #1e4fa1;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: none;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #1e4fa1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #163e7d;
+}
+
+/* =========================
+   FEED SECTION
+========================= */
+
+.preview-box {
+    flex: 2;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.preview-box h2 {
+    color: #1e4fa1;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   POST CARD
+========================= */
+
+.post {
+    background: #f9fbff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.post h4 {
+    color: #1e4fa1;
+    margin-bottom: 5px;
+}
+
+.post small {
+    color: gray;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.post p {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   LIKE + DELETE BUTTONS
+========================= */
+
+.likeBtn {
+    background: #1e4fa1;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.deleteBtn {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.likeBtn:hover {
+    background: #163e7d;
+}
+
+.deleteBtn:hover {
+    background: #b52b27;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
